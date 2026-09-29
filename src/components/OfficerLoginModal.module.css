@@ -1,0 +1,249 @@
+.modalBackdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(11, 25, 44, 0.8);
+  backdrop-filter: blur(4px);
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modalBox {
+  background: #ffffff;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 24px 64px rgba(0, 40, 90, 0.35);
+  overflow: hidden;
+  border: 1px solid #cbd5e1;
+}
+
+.modalHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: #002d62;
+  color: #ffffff;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.portalTitle {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.portalSub {
+  font-size: 0.65rem;
+  color: #f5a623;
+  letter-spacing: 1px;
+  display: block;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.closeBtn:hover {
+  opacity: 1;
+}
+
+.loginForm {
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.instructionBanner {
+  background: #fff8eb;
+  border: 1px solid #fbd38d;
+  color: #8c5200;
+  font-size: 0.74rem;
+  padding: 8px 12px;
+  border-radius: 6px;
+  line-height: 1.5;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #0b2244;
+}
+
+.inputField {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  font-size: 0.88rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+  background: #f8fafc;
+}
+
+.inputField:focus {
+  border-color: #003f87;
+  background: #ffffff;
+}
+
+.btnLoginSubmit {
+  margin-top: 8px;
+  padding: 12px;
+  background: #003f87;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btnLoginSubmit:hover {
+  background: #002760;
+}
+
+/* Success State */
+.successState {
+  padding: 28px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.successIconCircle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #dcfce7;
+  color: #16a34a;
+  border: 2px solid #86efac;
+  font-size: 1.8rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.officerName {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #003f87;
+  margin: 0 0 6px 0;
+}
+
+.clearanceBadge {
+  font-size: 0.68rem;
+  font-weight: 800;
+  color: #15803d;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  padding: 3px 10px;
+  border-radius: 4px;
+  margin-bottom: 14px;
+}
+
+.sessionInfo {
+  font-size: 0.82rem;
+  color: #475569;
+  margin: 0 0 20px 0;
+}
+
+.controlPanelMini {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.statBox {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.statKey {
+  font-size: 0.62rem;
+  color: #64748b;
+  font-weight: 700;
+}
+
+.statVal {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #0b2244;
+}
+
+.actionBtnRow {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.btnActionPrimary {
+  background: #c8102e;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.btnActionPrimary:hover {
+  background: #9f0c24;
+}
+
+.btnActionSecondary {
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  color: #334155;
+  padding: 8px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+
+.modalFooter {
+  padding: 10px 16px;
+  background: #f1f5f9;
+  border-top: 1px solid #e2e8f0;
+  text-align: center;
+  font-size: 0.68rem;
+  color: #64748b;
+}

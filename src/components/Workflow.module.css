@@ -1,0 +1,436 @@
+.workflowSection {
+  background: #ffffff;
+  padding: 84px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.subBadge {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 4px;
+  background: #fdf2f2;
+  color: #c8102e;
+  border: 1px solid #fecaca;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+.sectionTitle {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #0b2244;
+  margin: 0 0 12px 0;
+  line-height: 1.15;
+}
+
+.headerDivider {
+  width: 64px;
+  height: 4px;
+  background: linear-gradient(90deg, #003f87, #c8102e);
+  border-radius: 2px;
+  margin: 0 auto 16px auto;
+}
+
+.sectionDesc {
+  font-size: 0.98rem;
+  color: #64748b;
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Diagram CTA */
+.diagramCtaRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.btnOpenDiagram {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: #003f87;
+  color: #ffffff;
+  font-size: 0.88rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 63, 135, 0.2);
+}
+
+.btnOpenDiagram:hover {
+  background: #002d62;
+  transform: translateY(-2px);
+}
+
+.orText {
+  font-size: 0.85rem;
+  color: #64748b;
+  font-style: italic;
+}
+
+/* ── Steps Matrix (16 chips) ── */
+.stepsMatrix {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.stepChip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 6px;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.stepChip:hover {
+  background: #f0f7ff;
+  border-color: #003f87;
+  transform: translateY(-2px);
+}
+
+.stepChipActive {
+  background: #003f87 !important;
+  border-color: #003f87 !important;
+  box-shadow: 0 4px 12px rgba(0, 63, 135, 0.25);
+}
+
+.stepNum {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #003f87;
+  margin-bottom: 2px;
+}
+
+.stepChipActive .stepNum {
+  color: #f5a623;
+}
+
+.stepTitleMini {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #475569;
+  line-height: 1.2;
+}
+
+.stepChipActive .stepTitleMini {
+  color: #ffffff;
+}
+
+/* ── Selected Step Detail Card ── */
+.detailCard {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 2px solid #bfdbfe;
+  box-shadow: 0 12px 36px rgba(0, 40, 90, 0.08);
+  padding: 32px;
+  margin-bottom: 36px;
+}
+
+.detailTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 20px;
+}
+
+.stepBadgeBig {
+  display: inline-block;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.76rem;
+  font-weight: 800;
+  color: #c8102e;
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  padding: 3px 10px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.detailTitle {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #003f87;
+  margin: 0 0 6px 0;
+}
+
+.detailSub {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.detailIconWrap {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detailIcon {
+  font-size: 2rem;
+}
+
+.detailBody {
+  margin-bottom: 24px;
+}
+
+.detailDesc {
+  font-size: 1.05rem;
+  color: #334155;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.detailFooter {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 16px;
+}
+
+.footerStepNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navStepBtn {
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.navStepBtn:hover:not(:disabled) {
+  background: #003f87;
+  color: #ffffff;
+  border-color: #003f87;
+}
+
+.navStepBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.stepCount {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #64748b;
+}
+
+/* ── Thumbnail Banner ── */
+.thumbnailBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f0f7ff;
+  border: 1.5px dashed #93c5fd;
+  border-radius: 12px;
+  padding: 20px 28px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  gap: 24px;
+}
+
+.thumbnailBanner:hover {
+  background: #e6f0fc;
+  border-color: #003f87;
+  transform: translateY(-2px);
+}
+
+.thumbBadge {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #003f87;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.thumbTitle {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 4px 0;
+}
+
+.thumbDesc {
+  font-size: 0.84rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.thumbImageWrap {
+  position: relative;
+  width: 180px;
+  height: 90px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.thumbImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.zoomPill {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  background: rgba(0, 45, 98, 0.85);
+  color: #ffffff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* ── Fullscreen Blueprint Modal ── */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(11, 25, 44, 0.85);
+  backdrop-filter: blur(4px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.modalContent {
+  background: #ffffff;
+  border-radius: 16px;
+  max-width: 1200px;
+  width: 100%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4);
+}
+
+.modalHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background: #002d62;
+  color: #ffffff;
+}
+
+.modalHeaderLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.modalLogo {
+  font-size: 1.3rem;
+}
+
+.modalTitle {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #ffffff;
+}
+
+.modalCloseBtn {
+  background: #c8102e;
+  border: none;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.modalCloseBtn:hover {
+  background: #a50b23;
+}
+
+.modalBody {
+  padding: 24px;
+  overflow-y: auto;
+  background: #f8fafc;
+  display: flex;
+  justify-content: center;
+}
+
+.modalFullImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.modalFooter {
+  padding: 10px 24px;
+  background: #f1f5f9;
+  border-top: 1px solid #e2e8f0;
+  font-size: 0.74rem;
+  color: #64748b;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .stepsMatrix { grid-template-columns: repeat(4, 1fr); }
+  .thumbnailBanner { flex-direction: column; align-items: flex-start; }
+  .thumbImageWrap { width: 100%; height: 120px; }
+}
+
+@media (max-width: 640px) {
+  .stepsMatrix { grid-template-columns: repeat(2, 1fr); }
+}

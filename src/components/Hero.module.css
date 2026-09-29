@@ -1,0 +1,258 @@
+.heroSection {
+  background: #ffffff;
+  padding: 40px 0 60px 0;
+  border-bottom: 1px solid #e2e8f0;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroContainer {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 200px;
+  align-items: center;
+}
+
+/* ── Left Column ── */
+.heroTextCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.officialPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  align-self: flex-start;
+  padding: 7px 18px;
+  border-radius: 22px;
+  background: #eef5fc;
+  border: 1px solid #bfdbfe;
+  color: #03489e;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  margin-bottom: 18px;
+}
+
+.pillDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #0284c7;
+  animation: pulseDot 1.5s infinite;
+}
+
+@keyframes pulseDot {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(0.7); opacity: 0.5; }
+}
+
+.mainTitle {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 3.6rem;
+  font-weight: 900;
+  color: #003f87;
+  line-height: 1.1;
+  margin: 0 0 14px 0;
+  letter-spacing: 0.6px;
+  text-shadow: 0 3px 10px rgba(0, 63, 135, 0.18);
+}
+
+.titleHighlight {
+  color: #138808;
+  font-size: 0.95em;
+  letter-spacing: 1px;
+  border-bottom: 4px solid #f5a623;
+  padding-bottom: 2px;
+}
+
+/* Tricolour accent bar under the headline */
+.mainTitle::after {
+  content: '';
+  display: block;
+  width: 220px;
+  height: 5px;
+  margin-top: 14px;
+  border-radius: 3px;
+  background: linear-gradient(
+    to right,
+    #FF9933 0%, #FF9933 33%,
+    #FFFFFF 33%, #FFFFFF 66%,
+    #138808 66%, #138808 100%
+  );
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.heroTagline {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #334155;
+  margin: 22px 0 14px 0;
+  line-height: 1.4;
+}
+
+.heroDesc {
+  font-size: 1.08rem;
+  color: #64748b;
+  line-height: 1.75;
+  margin-bottom: 24px;
+}
+
+.heroDesc strong {
+  color: #0f172a;
+}
+
+/* ── Uniqueness Checklist ── */
+.uniquenessList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 26px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid #f5a623;
+  border-radius: 10px;
+  padding: 18px 20px;
+}
+
+.uniqueItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 1rem;
+  color: #334155;
+  line-height: 1.55;
+}
+
+.checkGlow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #003f87, #0284c7);
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 900;
+  flex-shrink: 0;
+  margin-top: 2px;
+  box-shadow: 0 2px 6px rgba(0, 63, 135, 0.35);
+}
+
+.uniqueItem strong {
+  color: #003f87;
+  font-weight: 800;
+  font-size: 1.08rem;
+  display: block;
+}
+
+/* ── CTA Buttons ── */
+.ctaRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.btnPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background: #003f87;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 14px rgba(0, 63, 135, 0.25);
+}
+
+.btnPrimary:hover {
+  background: #002d62;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 63, 135, 0.35);
+}
+
+.btnSecondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: 8px;
+  background: #c8102e;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btnSecondary:hover {
+  background: #9f0c24;
+  transform: translateY(-2px);
+}
+
+.btnOutline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1.5px solid #cbd5e1;
+  color: #334155;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btnOutline:hover {
+  border-color: #003f87;
+  color: #003f87;
+  background: #f8fafc;
+}
+
+.divisionFootnote {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 0.85rem;
+  color: #64748b;
+  border-top: 1px dashed #cbd5e1;
+  padding-top: 14px;
+}
+
+.railEmblem {
+  font-size: 1.3rem;
+}
+
+/* ── Right Column: Custom System Image ── */
+.heroImageCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userCadImage {
+  width: 100%;
+  max-width: 620px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .heroContainer { grid-template-columns: 1fr; gap: 32px; }
+  .mainTitle { font-size: 2.6rem; }
+  .heroTagline { font-size: 1.25rem; }
+}

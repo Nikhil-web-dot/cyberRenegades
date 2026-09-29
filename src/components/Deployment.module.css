@@ -1,0 +1,145 @@
+.deploy { background: var(--ir-bg); }
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* Big card */
+.bigCard {
+  background: linear-gradient(135deg, var(--ir-blue), var(--ir-blue-dark));
+  border-radius: 20px;
+  padding: 48px 36px;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  box-shadow: var(--shadow-lg);
+}
+
+.bigCardBg {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.04);
+  bottom: -80px;
+  right: -80px;
+  pointer-events: none;
+}
+
+.bigNum {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: var(--ir-gold);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.bigLabel {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.6);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  font-weight: 500;
+}
+
+.miniGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.miniCard {
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.miniVal {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--ir-gold);
+}
+
+.miniKey {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.55);
+  margin-top: 2px;
+}
+
+/* Badge row */
+.badges {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background: white;
+  border: 1px solid var(--ir-gray-200);
+  color: var(--ir-blue-dark);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 100px;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Checklist */
+.checkList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.checkItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--ir-gray-200);
+}
+
+.checkItem:last-child { border-bottom: none; }
+
+.checkIcon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--ir-blue);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.checkTitle {
+  display: block;
+  font-weight: 600;
+  color: var(--ir-blue-dark);
+  margin-bottom: 4px;
+  font-size: 0.95rem;
+}
+
+.checkDesc {
+  font-size: 0.88rem;
+  color: var(--ir-gray-500);
+  line-height: 1.65;
+}
+
+@media (max-width: 900px) {
+  .inner { grid-template-columns: 1fr; gap: 40px; }
+}

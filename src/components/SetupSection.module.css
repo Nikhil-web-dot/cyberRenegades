@@ -1,0 +1,233 @@
+.setupSection {
+  background: #f8fafc;
+  padding: 84px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.subBadge {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 4px;
+  background: #eef4fc;
+  color: #003f87;
+  border: 1px solid #bfdbfe;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+.sectionTitle {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #0b2244;
+  margin: 0 0 12px 0;
+  line-height: 1.15;
+}
+
+.headerDivider {
+  width: 64px;
+  height: 4px;
+  background: linear-gradient(90deg, #003f87, #c8102e);
+  border-radius: 2px;
+  margin: 0 auto 16px auto;
+}
+
+.sectionDesc {
+  font-size: 0.98rem;
+  color: #64748b;
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ── Timeline ── */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.timelineCard {
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 4px 16px rgba(0, 40, 90, 0.05);
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.timelineCard:hover {
+  border-color: #003f87;
+  box-shadow: 0 8px 24px rgba(0, 63, 135, 0.12);
+  transform: translateY(-2px);
+}
+
+.phaseHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 24px;
+  background: #f1f5f9;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.phasePill {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: #003f87;
+  letter-spacing: 1px;
+}
+
+.durationPill {
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #64748b;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  padding: 2px 10px;
+  border-radius: 20px;
+}
+
+.cardMain {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 24px;
+}
+
+.iconCircle {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: #eef4fc;
+  border: 1.5px solid #bfdbfe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.textWrap {
+  flex: 1;
+}
+
+.stepTitle {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #003f87;
+  margin: 0 0 8px 0;
+}
+
+.stepDesc {
+  font-size: 0.92rem;
+  color: #475569;
+  line-height: 1.7;
+  margin: 0 0 16px 0;
+}
+
+.deliverablesList {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.delivTitle {
+  font-size: 0.76rem;
+  color: #0f172a;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.chips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: #0369a1;
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  padding: 3px 10px;
+  border-radius: 4px;
+}
+
+/* ── Readiness Banner ── */
+.readinessBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 32px;
+  background: #002d62;
+  border-radius: 12px;
+  color: #ffffff;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.readinessLeft {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.readyIcon {
+  font-size: 2.2rem;
+}
+
+.readyTitle {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+  color: #ffffff;
+}
+
+.readyDesc {
+  font-size: 0.88rem;
+  color: #cbd5e1;
+  margin: 0;
+}
+
+.btnRequestSurvey {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 22px;
+  background: #f5a623;
+  color: #000000;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btnRequestSurvey:hover {
+  background: #e09618;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .cardMain { flex-direction: column; gap: 16px; }
+  .readinessBanner { flex-direction: column; align-items: flex-start; }
+}

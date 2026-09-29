@@ -1,0 +1,162 @@
+.topStrip {
+  background: var(--ir-blue-dark);
+  color: rgba(255,255,255,0.8);
+  text-align: center;
+  font-size: 0.75rem;
+  padding: 7px 20px;
+  letter-spacing: 0.4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--ir-blue);
+  border-bottom: 3px solid var(--ir-gold);
+  transition: box-shadow 0.3s ease;
+}
+
+.header.scrolled {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  gap: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.brandText {
+  display: flex;
+  flex-direction: column;
+}
+
+.brandMain {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+}
+
+.brandSub {
+  font-size: 0.65rem;
+  color: rgba(255,255,255,0.6);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.brandDivider {
+  width: 1px;
+  height: 40px;
+  background: rgba(255,255,255,0.25);
+  margin: 0 4px;
+}
+
+.k9Label {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--ir-gold);
+  letter-spacing: 2px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.navLink {
+  color: rgba(255,255,255,0.8);
+  padding: 7px 13px;
+  border-radius: 6px;
+  font-size: 0.87rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.navLink:hover {
+  color: white;
+  background: rgba(255,255,255,0.12);
+}
+
+.navCta {
+  background: var(--ir-red);
+  color: white;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 0.87rem;
+  font-weight: 600;
+  margin-left: 8px;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.navCta:hover {
+  background: #a80d25;
+  box-shadow: 0 4px 12px rgba(200,16,46,0.4);
+}
+
+.menuBtn {
+  display: none;
+  background: rgba(255,255,255,0.1);
+  border: none;
+  color: white;
+  border-radius: 6px;
+  padding: 6px;
+  transition: background 0.2s;
+}
+
+.menuBtn:hover { background: rgba(255,255,255,0.2); }
+
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 24px 16px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  gap: 4px;
+}
+
+.mobileLink {
+  color: rgba(255,255,255,0.8);
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.mobileLink:hover { background: rgba(255,255,255,0.1); color: white; }
+
+.mobileCta {
+  background: var(--ir-red);
+  color: white;
+  padding: 11px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-top: 8px;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .nav { display: none; }
+  .menuBtn { display: flex; }
+  .brandSub { display: none; }
+  .brandDivider { display: none; }
+}

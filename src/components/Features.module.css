@@ -1,0 +1,83 @@
+.features { background: var(--ir-bg); }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 32px 28px;
+  border: 1px solid var(--ir-gray-200);
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--ir-blue), var(--ir-red));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+}
+
+.card:hover { box-shadow: var(--shadow-lg); transform: translateY(-6px); border-color: transparent; }
+.card:hover::after { transform: scaleX(1); }
+
+.iconWrap {
+  width: 54px;
+  height: 54px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.icon_blue { background: var(--ir-blue-pale); }
+.icon_red { background: rgba(200,16,46,0.07); }
+.icon_gold { background: rgba(245,166,35,0.1); }
+.icon_teal { background: rgba(0,128,128,0.08); }
+.icon_purple { background: rgba(100,60,180,0.08); }
+
+.cardTitle {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--ir-blue-dark);
+  margin-bottom: 12px;
+}
+
+.cardDesc {
+  font-size: 0.9rem;
+  color: var(--ir-gray-500);
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+.cardTag {
+  display: inline-block;
+  background: var(--ir-blue-pale);
+  color: var(--ir-blue);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 3px 10px;
+  border-radius: 4px;
+  border: 1px solid var(--ir-blue-muted);
+}
+
+@media (max-width: 1024px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .grid { grid-template-columns: 1fr; }
+}

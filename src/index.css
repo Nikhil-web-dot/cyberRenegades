@@ -1,0 +1,470 @@
+/* ─────────────────────────────────────────────
+   INDIAN RAILWAYS — GLOBAL VARIABLES & RESET
+───────────────────────────────────────────── */
+
+:root {
+  /* Indian Railways inspired palette */
+  --ir-blue: #003b73;
+  --ir-blue-dark: #00264d;
+  --ir-blue-light: #005a9c;
+  --ir-blue-pale: #eef4f9;
+  --ir-blue-muted: #cbdceb;
+
+  --ir-red: #b5122b;
+  --ir-red-dark: #8f0e21;
+  --ir-gold: #d99a18;
+
+  --ir-white: #ffffff;
+  --ir-bg: #f8fafc;
+
+  --ir-gray-100: #f1f3f5;
+  --ir-gray-200: #dfe4e8;
+  --ir-gray-300: #c7cdd3;
+  --ir-gray-400: #929aa3;
+  --ir-gray-500: #626b75;
+  --ir-gray-700: #343a40;
+
+  --ir-dark: #17212b;
+
+  --radius: 8px;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 59, 115, 0.10);
+  --shadow-lg: 0 8px 24px rgba(0, 59, 115, 0.14);
+
+  --transition: 0.2s ease;
+}
+
+
+/* ─────────────────────────────────────────────
+   GLOBAL RESET
+───────────────────────────────────────────── */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 24px;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  background: var(--ir-white);
+  color: var(--ir-dark);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: "Times New Roman", Times, serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+/* ─────────────────────────────────────────────
+   TYPOGRAPHY
+───────────────────────────────────────────── */
+
+body,
+p,
+span,
+a,
+button,
+input,
+textarea,
+select,
+label {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Rajdhani removed — use Times New Roman everywhere */
+
+.font-rajdhani {
+  font-family: "Times New Roman", Times, serif;
+}
+
+
+/* ─────────────────────────────────────────────
+   UTILITIES
+───────────────────────────────────────────── */
+
+.container {
+  max-width: 1280px;
+  margin: 0 10%;
+  padding: 0 24px;
+}
+
+.section-pad {
+  padding: 80px 0;
+}
+
+.section-pad-sm {
+  padding: 56px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-blue {
+  color: var(--ir-blue);
+}
+
+.text-gold {
+  color: var(--ir-gold);
+}
+
+.text-red {
+  color: var(--ir-red);
+}
+
+.text-white {
+  color: var(--ir-white);
+}
+
+.text-muted {
+  color: var(--ir-gray-500);
+}
+
+
+/* ─────────────────────────────────────────────
+   BADGES / TAGS
+───────────────────────────────────────────── */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 4px 12px;
+
+  border-radius: 4px;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.badge-blue {
+  background: var(--ir-blue-pale);
+  color: var(--ir-blue);
+  border: 1px solid var(--ir-blue-muted);
+}
+
+.badge-red {
+  background: #fff1f3;
+  color: var(--ir-red);
+  border: 1px solid #e7b7bf;
+}
+
+.badge-live {
+  background: #edf8f2;
+  color: #147a45;
+  border: 1px solid #b8dfca;
+}
+
+.badge-live::before {
+  content: "";
+
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #16a05d;
+
+  animation: pulse-dot 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.45;
+    transform: scale(0.7);
+  }
+}
+
+
+/* ─────────────────────────────────────────────
+   SECTION HEADING
+───────────────────────────────────────────── */
+
+.section-label {
+  display: inline-block;
+
+  font-family: "Times New Roman", Times, serif;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  color: var(--ir-blue);
+
+  margin-bottom: 10px;
+  padding: 4px 10px;
+
+  background: var(--ir-blue-pale);
+
+  border-left: 3px solid var(--ir-blue);
+}
+
+.section-heading {
+  font-family: "Times New Roman", Times, serif;
+
+  font-size: 2.5rem;
+  font-weight: 700;
+
+  color: var(--ir-blue-dark);
+
+  line-height: 1.2;
+
+  margin-bottom: 14px;
+}
+
+.section-sub {
+  font-family: "Times New Roman", Times, serif;
+
+  font-size: 1rem;
+
+  color: var(--ir-gray-500);
+
+  max-width: 620px;
+
+  line-height: 1.7;
+}
+
+
+/* ─────────────────────────────────────────────
+   BUTTONS
+───────────────────────────────────────────── */
+
+.btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 11px 24px;
+
+  border-radius: 6px;
+
+  font-family: "Times New Roman", Times, serif;
+
+  font-weight: 700;
+  font-size: 0.95rem;
+
+  border: none;
+
+  transition: all var(--transition);
+
+  white-space: nowrap;
+}
+
+
+/* Primary Railway Blue */
+
+.btn-primary {
+  background: var(--ir-blue);
+  color: var(--ir-white);
+}
+
+.btn-primary:hover {
+  background: var(--ir-blue-dark);
+
+  transform: translateY(-1px);
+
+  box-shadow: 0 5px 15px rgba(0, 59, 115, 0.25);
+}
+
+
+/* Emergency / Alert Red */
+
+.btn-red {
+  background: var(--ir-red);
+  color: var(--ir-white);
+}
+
+.btn-red:hover {
+  background: var(--ir-red-dark);
+
+  transform: translateY(-1px);
+
+  box-shadow: 0 5px 15px rgba(181, 18, 43, 0.25);
+}
+
+
+/* Outline */
+
+.btn-outline {
+  background: transparent;
+
+  color: var(--ir-blue);
+
+  border: 1.5px solid var(--ir-blue);
+}
+
+.btn-outline:hover {
+  background: var(--ir-blue);
+  color: var(--ir-white);
+}
+
+
+/* White Outline */
+
+.btn-outline-white {
+  background: transparent;
+
+  color: var(--ir-white);
+
+  border: 1.5px solid rgba(255, 255, 255, 0.65);
+}
+
+.btn-outline-white:hover {
+  background: rgba(255, 255, 255, 0.1);
+
+  border-color: var(--ir-white);
+}
+
+
+/* ─────────────────────────────────────────────
+   CARDS
+───────────────────────────────────────────── */
+
+.card {
+  background: var(--ir-white);
+
+  border: 1px solid var(--ir-gray-200);
+
+  border-radius: var(--radius);
+
+  transition: all var(--transition);
+}
+
+.card:hover {
+  border-color: var(--ir-blue-muted);
+
+  box-shadow: var(--shadow-md);
+
+  transform: translateY(-2px);
+}
+
+
+/* ─────────────────────────────────────────────
+   DIVIDER
+───────────────────────────────────────────── */
+
+.divider {
+  width: 48px;
+  height: 3px;
+
+  background: var(--ir-blue);
+
+  border-radius: 2px;
+
+  margin: 14px 0;
+}
+
+.divider-center {
+  margin: 14px auto;
+}
+
+
+/* ─────────────────────────────────────────────
+   RAILWAY SECTION BAR
+───────────────────────────────────────────── */
+
+.railway-bar {
+  width: 100%;
+  height: 4px;
+
+  background: var(--ir-blue);
+}
+
+.railway-bar-red {
+  width: 100%;
+  height: 3px;
+
+  background: var(--ir-red);
+}
+
+
+/* ─────────────────────────────────────────────
+   SCROLL ANIMATIONS
+───────────────────────────────────────────── */
+
+.fade-up {
+  opacity: 0;
+
+  transform: translateY(25px);
+
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+
+/* ─────────────────────────────────────────────
+   RESPONSIVE
+───────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+
+  .container {
+    padding: 0 18px;
+  }
+
+  .section-heading {
+    font-size: 2rem;
+  }
+
+  .section-pad {
+    padding: 60px 0;
+  }
+
+  .section-pad-sm {
+    padding: 45px 0;
+  }
+
+  .hide-mobile {
+    display: none !important;
+  }
+}

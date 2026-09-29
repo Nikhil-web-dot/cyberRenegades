@@ -1,0 +1,264 @@
+.footerContainer {
+  background: #001e42;
+  color: #ffffff;
+  width: 100%;
+}
+
+/* ── Emergency Band (Crimson Red with Toll Free Call) ── */
+.emergencyBand {
+  background: #c8102e;
+  padding: 16px 24px;
+  border-bottom: 2px solid #f5a623;
+}
+
+.emergencyInner {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.emergencyLeft {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.sirenIcon {
+  font-size: 2.2rem;
+  animation: sirenPulse 1.5s infinite;
+}
+
+@keyframes sirenPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
+.emergencyTitle {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  display: block;
+  color: #ffffff;
+}
+
+.emergencySub {
+  font-size: 0.82rem;
+  color: #fee2e2;
+  margin: 2px 0 0 0;
+}
+
+.emergencyActions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btnCall139 {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  color: #c8102e;
+  font-size: 0.95rem;
+  font-weight: 800;
+  padding: 8px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+
+.btnCall139:hover {
+  background: #fef2f2;
+  transform: translateY(-2px);
+}
+
+.meriSaheli {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: #fef08a;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+/* ── Main Footer ── */
+.mainFooter {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 56px 24px 24px 24px;
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 48px;
+}
+
+/* Col 1 Brand */
+.brandRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.brandTitle {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.brandSub {
+  font-size: 0.68rem;
+  color: #94a3b8;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.k9Tag {
+  display: inline-block;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #f5a623;
+  background: rgba(245, 166, 35, 0.12);
+  border: 1px solid rgba(245, 166, 35, 0.3);
+  padding: 3px 10px;
+  border-radius: 4px;
+  margin-bottom: 14px;
+}
+
+.brandDesc {
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.portalBadge {
+  font-size: 0.74rem;
+  color: #94a3b8;
+  border-top: 1px dashed rgba(255, 255, 255, 0.12);
+  padding-top: 12px;
+}
+
+/* Links Columns */
+.colHeading {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: #f5a623;
+  margin: 0 0 16px 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(245, 166, 35, 0.3);
+  padding-bottom: 6px;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.linkBtn {
+  background: none;
+  border: none;
+  color: #cbd5e1;
+  font-size: 0.84rem;
+  text-align: left;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.2s;
+}
+
+.linkBtn:hover {
+  color: #ffffff;
+  padding-left: 4px;
+}
+
+.linkA {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 0.84rem;
+  transition: all 0.2s;
+}
+
+.linkA:hover {
+  color: #ffffff;
+  padding-left: 4px;
+}
+
+.infoSpan {
+  font-size: 0.82rem;
+  color: #94a3b8;
+  display: block;
+}
+
+/* ── Bottom Bar ── */
+.bottomBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.bottomLeft {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.copyText {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.76rem;
+  color: #94a3b8;
+  line-height: 1.5;
+}
+
+.disclaimerText {
+  color: #64748b;
+  font-size: 0.7rem;
+}
+
+.makeInIndia {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #f5a623;
+  letter-spacing: 1.5px;
+  background: rgba(245, 166, 35, 0.1);
+  border: 1px solid rgba(245, 166, 35, 0.25);
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+
+@media (max-width: 1024px) {
+  .footerGrid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 640px) {
+  .footerGrid { grid-template-columns: 1fr; }
+  .emergencyInner { flex-direction: column; align-items: flex-start; }
+  .bottomBar { flex-direction: column; align-items: flex-start; }
+}

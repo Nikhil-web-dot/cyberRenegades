@@ -1,0 +1,141 @@
+.bc { background: white; }
+
+.chain {
+  display: flex;
+  gap: 0;
+  margin-bottom: 48px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.chainItem {
+  flex: 1;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nodeWrap {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.node {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--ir-blue-pale);
+  border: 3px solid var(--ir-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s;
+  cursor: default;
+}
+
+.node:hover {
+  background: var(--ir-blue);
+  transform: scale(1.1);
+  box-shadow: 0 8px 24px rgba(0,63,135,0.3);
+}
+
+.node:hover .nodeNum { color: rgba(255,255,255,0.7); }
+.node:hover .nodeIcon { filter: brightness(2); }
+
+.nodeNum {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--ir-blue);
+  line-height: 1;
+}
+
+.nodeIcon {
+  font-size: 1.5rem;
+}
+
+.connector {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.connectorLine {
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(90deg, var(--ir-blue), var(--ir-red));
+  opacity: 0.3;
+}
+
+.connectorArrow {
+  font-size: 1.1rem;
+  color: var(--ir-blue);
+  opacity: 0.5;
+  position: absolute;
+  right: -8px;
+}
+
+.stepContent {
+  text-align: center;
+  padding: 0 12px;
+}
+
+.stepTitle {
+  font-weight: 700;
+  color: var(--ir-blue-dark);
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1rem;
+}
+
+.stepDesc {
+  font-size: 0.8rem;
+  color: var(--ir-gray-500);
+  line-height: 1.6;
+}
+
+/* Offline note */
+.offlineNote {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: var(--ir-blue-pale);
+  border: 1px solid var(--ir-blue-muted);
+  border-left: 4px solid var(--ir-blue);
+  border-radius: 12px;
+  padding: 24px 28px;
+}
+
+.offlineIcon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.offlineTitle {
+  display: block;
+  color: var(--ir-blue-dark);
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.offlineDesc {
+  font-size: 0.9rem;
+  color: var(--ir-gray-500);
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .chain { flex-direction: column; align-items: center; }
+  .nodeWrap { flex-direction: column; width: auto; }
+  .connector { display: none; }
+  .chainItem { flex: unset; width: 100%; flex-direction: row; gap: 16px; align-items: flex-start; }
+  .stepContent { text-align: left; }
+}

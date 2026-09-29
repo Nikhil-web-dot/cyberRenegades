@@ -1,0 +1,429 @@
+.headerContainer {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #ffffff;
+  box-shadow: 0 4px 16px rgba(0, 40, 90, 0.12);
+  width: 100%;
+}
+
+/* ── Topmost Accessibility & Language Bar ── */
+.utilityBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 24px;
+  background: #f1f5f9;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 0.74rem;
+  color: #475569;
+}
+
+.utilityLeft {
+  font-weight: 600;
+  color: #334155;
+}
+
+.utilityRight {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.utilLabel {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #64748b;
+}
+
+.fontControls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.fontBtn {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #334155;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.fontBtn:hover {
+  background: #e2e8f0;
+  border-color: #94a3b8;
+}
+
+.fontBtnActive {
+  background: #003f87 !important;
+  color: #ffffff !important;
+  border-color: #003f87 !important;
+}
+
+.dividerV {
+  width: 1px;
+  height: 14px;
+  background: #cbd5e1;
+}
+
+.langSelector {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.langBtn {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #334155;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.langBtn:hover {
+  background: #e2e8f0;
+}
+
+.langBtnActive {
+  background: #c8102e !important;
+  color: #ffffff !important;
+  border-color: #c8102e !important;
+}
+
+/* ── Top Main Strip ── */
+.topMainStrip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 24px;
+  background: #ffffff;
+  border-bottom: 1px solid #dce4ee;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.leftBrand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.flagIcon {
+  display: flex;
+  align-items: center;
+}
+
+.irEmblemWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.mainTitle {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #0b2244;
+  letter-spacing: 0.5px;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.badgeGov {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: #eef4fc;
+  color: #1a5ea6;
+  border: 1px solid #c8dcf5;
+}
+
+.badgeUnit {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: #fff8eb;
+  color: #9c6500;
+  border: 1px solid #f9dfad;
+}
+
+.badgeGps {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: #edfbf3;
+  color: #0d8745;
+  border: 1px solid #b7ecd0;
+}
+
+.subTitle {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #4a5d78;
+  letter-spacing: 0.8px;
+  margin-top: 2px;
+  text-transform: uppercase;
+}
+
+/* ── Right Telemetry Controls ── */
+.rightControls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background: #f8fafc;
+  border: 1px solid #d4e0ee;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.pillOnline {
+  border-color: #a7e4c2;
+  background: #f0fbf5;
+}
+
+.pillOffline {
+  border-color: #f7c5ce;
+  background: #fff5f6;
+  color: #b91c1c;
+}
+
+.greenDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 6px #10b981;
+}
+
+.redDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ef4444;
+}
+
+.pillText {
+  color: #334155;
+}
+
+.btnOfficer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 11px;
+  background: #eef5ff;
+  border: 1px solid #bcd7fc;
+  border-radius: 6px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #004fb3;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btnOfficer:hover {
+  background: #004fb3;
+  color: #ffffff;
+  border-color: #004fb3;
+}
+
+.btnControl {
+  padding: 5px 9px;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btnControl:hover {
+  background: #f1f5f9;
+  border-color: #94a3b8;
+}
+
+.btnToggleNet {
+  border-color: #fca5a5;
+  color: #dc2626;
+  background: #fff7f7;
+}
+
+.btnToggleNet:hover {
+  background: #dc2626;
+  color: #ffffff;
+}
+
+/* ── Safety Ribbon ── */
+.safetyRibbon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 24px;
+  background: linear-gradient(90deg, #102a5c 0%, #173873 60%, #4a0d18 100%);
+  color: #ffffff;
+  font-size: 0.78rem;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.safetyLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.safetyBadge {
+  background: #ff9900;
+  color: #000000;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  padding: 2px 7px;
+  border-radius: 3px;
+}
+
+.safetyTextHindi {
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.4px;
+}
+
+.safetyDivider {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.safetyTextEn {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: #e2e8f0;
+}
+
+.safetyRight {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.74rem;
+}
+
+.greenSignalDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 8px #22c55e;
+  animation: pulseSignal 2s infinite ease-in-out;
+}
+
+@keyframes pulseSignal {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.85); }
+}
+
+.signalText {
+  letter-spacing: 0.5px;
+  color: #f1f5f9;
+}
+
+/* ── Navigation Bar ── */
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  background: #003f87;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  overflow-x: auto;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.navItem {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 9px 12px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.navItem:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffcc00;
+}
+
+.navHelpline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.76rem;
+  color: #e2e8f0;
+  white-space: nowrap;
+}
+
+.helplineBadge {
+  background: #c8102e;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.helplineBadge:hover {
+  background: #a50b23;
+}
+
+@media (max-width: 1024px) {
+  .safetyRibbon { flex-direction: column; align-items: flex-start; gap: 4px; }
+  .rightControls { width: 100%; justify-content: flex-start; }
+}
